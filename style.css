@@ -1,0 +1,312 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(9, 9, 9);
+    scroll-behavior: smooth;
+}
+
+#menubar {
+    display:none;
+}
+
+@media screen and (max-width: 767px) {
+    /* Tekst */
+    h1 {
+        color: white;
+        border: 1px solid black;
+        font-family: 'lora', 'Verdana', 'Arial', 'Times New Roman';
+        font-size: 22px; 
+        font-style: italic;
+        font-weight: bold;
+        padding: 2px;
+    }
+
+    h2 {
+        color: white;
+        font-family: 'lora', 'Verdana', 'Arial', 'Times New Roman';
+        font-size: 20px; 
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+        padding: 3px 0;
+    }
+
+    h3 {
+        color: white;
+        font-family: 'lora', 'Verdana', 'Arial', 'Times New Roman';
+        font-size: 20px; 
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    p {
+        color: white;
+        font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
+        font-size: 14px; 
+        font-style: normal;
+        line-height: 1.5;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+/*Navbar*/
+    .logoTalitha {
+        width: 160px;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        border-bottom: 2px solid #F5BF00;
+        z-index: 99999;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.26); 
+    }
+    
+
+    header .navmenu ul li {
+        list-style: none;
+        margin: 0;
+    }
+    
+    header .navmenu ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        font-size: 15px;
+        font-style: normal;
+        font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
+        margin: 0 20px;
+        padding: 10px 0;
+    }
+    
+    header .navmenu ul li a:visited {
+        color: white;
+    }
+    
+    header .navmenu ul li ul {
+        position: absolute;
+        left: 0;
+        display: none;
+    }
+    
+    header .navmenu ul li ul li {
+        width: 100%;
+    }
+    
+    header .navmenu ul li ul li a{
+        margin-left: 25px; 
+    }
+    
+    header .navmenu ul li:focus-within > ul,
+    header .navmenu ul li:hover > ul{
+        display: inline-table;
+    }
+
+    .navbar {
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 20px;
+    }
+    
+    header .navmenu {
+        position: absolute;
+        top: 80px; 
+        left: 0; 
+        right: 0;
+        display: none;
+    }
+
+    header .navmenu ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    header .navmenu ul li{
+        width: 100%;
+        list-style: none;
+    }
+    
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header label {
+        display: block;
+        position: relative;
+    }
+    
+    .hamburger {
+        display: none;
+        cursor: pointer;
+    }
+    
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white;
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+  
+    .hamburger {
+        display: block;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #menubar:checked ~ .navmenu{
+        display: block;
+        animation: animationNavbar 1s;
+    }
+
+    /* Pijl navbar */
+    .arrow {
+        width: 10px;
+        height: 10px;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+        transform: rotate(-45deg);
+        vertical-align: middle;
+        float: right;
+        margin-right: 5px;
+    }
+
+    /* Footer */
+    footer {
+        border-top: 1px solid white;
+        margin-top: 20px;
+    }
+  
+    footer p {
+        margin: 0;
+    }
+  
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        bottom: 0;
+        text-align: center;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    .footer a {
+        color: white;
+    }
+  
+    .footerSocialMedia {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    } 
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) { 
+    .hamburger {
+      display: none;
+    }
+
+    .logoTalitha {
+        width: 200px;
+    }
+    
+    header {
+        position: sticky;
+        top: 0;
+        border-bottom: 2px solid #F5BF00;
+        z-index: 99999;
+    }
+
+    .navmenu {
+        margin-left: auto;
+    }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        margin: 0 50px;
+    }
+    
+    header .navmenu ul li {
+        list-style: none;
+        margin: 0;
+        display: inline-block; /* Add this line */
+    }
+    
+    header .navmenu ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        font-size: 15px;
+        font-style: normal;
+        font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
+        padding: 10px;
+    }
+
+    .arrow {
+        width: 10px;
+        height: 10px;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+        transform: rotate(-45deg);
+        vertical-align: middle;
+        float: right;
+        margin-left: 10px;
+    }
+
+    .navmenu ul li {
+        list-style: none;
+        margin: 0;
+        position: relative;
+    }
+    
+    .navmenu ul li .submenu {
+        display: none;
+        position: absolute;
+        z-index: 999999;
+        left: -30px;
+    }
+    
+    .navmenu ul li:hover .submenu {
+        display: block;
+    }
+    
+    .navmenu ul li .submenu a {
+        text-decoration: none;
+        display: block;
+        background-color: #171717;
+        border-left: 3px solid #ffc400;
+        border-right: 3px solid #ffc400;
+        width: 130px;
+    }
+}  
+

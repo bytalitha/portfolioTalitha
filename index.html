@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Talitha</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logoTalitha" src="images/logoTalitha.png" alt="logo">
+                </a>
+            </div>
+
+            <input type ="checkbox" id="menubar">
+
+            <nav class="navmenu">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link"> Home</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Skills <span class="arrow"></span></a>
+                        <ul class="submenu">
+                            <li><a href="prototypes.html">Prototypes</a></li>
+                            <li><a href="development.html">Development</a></li>
+                            <li><a href="design.html">Design</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Social media <span class="arrow"></span></a>
+                        <ul class="submenu">
+                            <li><a href="https://api.whatsapp.com/send?phone=31629993476" target="_blank">WhatsApp</a></li>
+                            <li><a href="" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </li> 
+                </ul>
+            </nav>
+                    
+            <label for="menubar">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </label>
+        </nav>
+    </header>
     
 </body>
 </html>
