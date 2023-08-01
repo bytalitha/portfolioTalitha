@@ -156,11 +156,6 @@ body, html {
         position: relative;
     }
     
-    .hamburger {
-        display: none;
-        cursor: pointer;
-    }
-    
     .bar {
         display: block;
         width: 25px;
@@ -195,7 +190,6 @@ body, html {
 
     #menubar:checked ~ .navmenu{
         display: block;
-        animation: animationNavbar 1s;
     }
 
     /* Pijl navbar */
