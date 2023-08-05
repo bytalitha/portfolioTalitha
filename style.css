@@ -6,6 +6,12 @@ body, html {
     scroll-behavior: smooth;
 }
 
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #F5BF00;
+}
+
 #menubar {
     display:none;
 }
@@ -65,10 +71,12 @@ body, html {
         top: 0;
         border-bottom: 2px solid #F5BF00;
         z-index: 99999;
+        background-color: #090909;
     }
 
     .nav-item {
         border-bottom: 1px solid rgba(255, 255, 255, 0.26); 
+        background-color: #090909;
     }
     
 
@@ -121,7 +129,7 @@ body, html {
     
     header .navmenu {
         position: absolute;
-        top: 80px; 
+        top: 82px; 
         left: 0; 
         right: 0;
         display: none;
@@ -250,6 +258,7 @@ body, html {
         top: 0;
         border-bottom: 2px solid #F5BF00;
         z-index: 99999;
+        background-color: #090909;
     }
 
     .navmenu {
