@@ -194,7 +194,7 @@ a {
 
     /* Home */
     .tekstgedeelte {
-        margin: 0 20px;
+        margin: 20px 20px 40px 20px;
     }
 
     .socialMediaHomeContainer {
@@ -221,16 +221,22 @@ a {
     .MyWork {
         text-align: center;
         margin-top: 40px;
+        margin: 0 20px;
     }
 
-    button[class="buttonSkills"] {
+    .buttonsMyWork {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttonSkillsHomepage {
         width: 100%;
         background-image: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
         font-family: 'Rubik', 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
         font-size: 18px;
         font-style: normal;
         font-weight: bold;
-        padding: 20px;
+        padding: 20px 0;
         border: none;
         margin: 10px 0;
         border-radius: 2px;
@@ -240,6 +246,7 @@ a {
     button:active {
         box-shadow: none;
         transform: translateY(2px);
+        
     }
 
     /* Footer */
@@ -279,6 +286,19 @@ a {
         font-style: normal;
         font-weight: normal;
     }
+
+    h2 {
+        background: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        max-width: max-content;
+        font-size: 29px;
+        font-weight: bold;
+        text-align: left;
+        font-family: 'Rubik', 'Verdana', 'Arial', 'Times New Roman';
+    }
+
 
     p {
         color: white;
@@ -367,7 +387,7 @@ a {
         background-color: #171717;
         border-left: 3px solid #F5BF00;
         border-right: 3px solid #F5BF00;
-        width: 130px;
+        width: 140px;
     }
 
     .navbar li a:hover,
@@ -417,7 +437,7 @@ a {
         transform: scale(1.2);
     }
 
-    .test {
+    .tekstHome {
         width: 300px;
         margin: 50px auto;
         text-align: center;
@@ -435,10 +455,10 @@ a {
         justify-content: space-between;
     }
 
-    button[class="buttonSkills"] {
+    .buttonSkillsHomepage {
         width: 260px;
         font-family: 'Rubik', 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
-        font-size: 29px;
+        font-size: 24px;
         font-style: normal;
         font-weight: bold;
         padding: 20px;
@@ -449,7 +469,6 @@ a {
         border-radius: 2px;
         background-color: #090909;
         position: relative;
-        font-size: 24px;
         background-image: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
         -webkit-background-clip: text;
         background-clip: text;
@@ -457,6 +476,7 @@ a {
         cursor: pointer;
     }
     
+    .buttonSkillsHomepage:hover,
     button:hover {
         background-image: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
         color: #090909;
@@ -465,9 +485,77 @@ a {
         transition: 0.5s;
     }
 
-    button:active {
-        box-shadow: none;
-        transform: translateY(2px);
+    /* buttons leerdoelen */
+    #myBtnContainer {
+        position: fixed;
+        top: 0;
+        padding-top: 80px;
+        margin-right: auto;
+        z-index: 9998;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        margin-left: 100px;
+    }
+
+    button[class=buttonSkills] {
+        width: 250px;
+        font-family: 'Rubik', 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
+        font-style: normal;
+        font-weight: bold;
+        padding: 15px;
+        border: 3px solid;
+        border-image: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
+        border-image-slice: 1;
+        margin: 10px 0;
+        border-radius: 2px;
+        position: relative;
+        font-size: 18px;
+        background-image: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        cursor: pointer;
+    }
+
+    .buttonSkills:hover {
+        background-image: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
+        color: #090909;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        transition: 0.5s;
+    }
+
+    .buttonSkills.active {
+        width: 250px;
+        padding: 15px;
+        font-family: 'Rubik', 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: bold;
+        margin: 10px 0;
+        border-radius: 2px;
+        color: black;
+        background-image: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
+        background-clip: border-box;
+        border: 3px solid transparent;
+        border-image: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
+        border-image-slice: 1;
+    }
+    
+ 
+    .filterDiv {
+        display: none;
+        margin-left: 450px;
+        margin-right: 100px;
+        margin-top: 90px;
+    }
+    
+    .show { 
+        display: block;
     }
 
     /* Footer */

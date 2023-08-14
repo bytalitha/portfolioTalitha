@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Portfolio Talitha</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logoTalitha" src="images/logoTalitha.png" alt="logo">
+                </a>
+            </div>
+
+            <input type ="checkbox" id="menubar">
+
+            <nav class="navmenu">
+                <ul class="menu">
+                    <li class="nav-item"><a href="index.html"> Home</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="active">Skills <span class="arrow"></span></a>
+                        <ul class="submenu">
+                            <li><a href="development.html" class="active">Development</a></li>
+                            <li><a href="prototypes.html">Prototypes</a></li>
+                            <li><a href="design.html">Design</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)">Social media <span class="arrow"></span></a>
+                        <ul class="submenu">
+                            <li><a href="https://www.linkedin.com/in/talitha-v-091847164/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/bytalitha?tab=repositories" target="_blank">GitHub</a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=31629993476" target="_blank">WhatsApp</a></li>
+                        </ul>
+                    </li> 
+                </ul>
+            </nav>
+                    
+            <label for="menubar">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </label>
+        </nav>
+    </header>
+
+    <div id="myBtnContainer">
+        <h2>&lt; DEVELOPMENT &gt;</h2>
+        <button class="buttonSkills active" data-filter="showThisButton">Websites</button>
+        <button class="buttonSkills" data-filter="javascript">Javascript</button>
+        <button class="buttonSkills" data-filter="vueJS">Vue.js</button>
+    </div>
+
+    <div class="filterDiv showThisButton">
+        <h1>Yogastudio</h1>
+        <h1>Portfolio semster 2</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+    </div>
+
+    <div class="filterDiv javascript">
+        <h1>Kaart trekken</h1>
+    </div>
+
+    <div class="filterDiv vueJS">
+        <h1>In ontwikkeling</h1>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>© Copyright 2023</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
