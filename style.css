@@ -95,7 +95,7 @@ a {
         left: 0;
         display: none;
     }
-    
+ 
     header .navmenu ul li ul li {
         width: 100%;
     }
@@ -104,8 +104,8 @@ a {
         margin-left: 35px; 
     }
     
-    header .navmenu ul li:focus-within > ul,
-    header .navmenu ul li:hover > ul{
+    header .navmenu ul li:hover > ul,
+    header .navmenu ul li:focus-within > ul{
         display: inline-table;
     }
 
@@ -116,15 +116,18 @@ a {
         align-items: center;
         padding: 5px 20px;
     }
-    
-    header .navmenu {
-        position: absolute;
-        top: 82px; 
-        left: 0; 
-        right: 0;
-        display: none;
-    }
 
+    header .navmenu {
+        position: fixed;
+        top: 82px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #090909;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+        z-index: 999;
+    }
     header .navmenu ul {
         padding: 0;
         margin: 0;
@@ -181,6 +184,8 @@ a {
         display: block;
         background-color: #090909;
         height: 100vh;
+        /* transform: translateY(0); */
+       transform: translateX(0);
     }
 
     .navbar ul.menu li a.active {
@@ -458,7 +463,7 @@ a {
     .navmenu ul li .submenu {
         display: none;
         position: absolute;
-        z-index: 999999;
+        z-index: 9999;
         left: -20px;
     }
     
