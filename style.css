@@ -32,7 +32,7 @@ a {
         font-weight: normal;
     }
 
-    h2 {
+    /* h2 {
         background: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
         -webkit-background-clip: text;
         background-clip: text;
@@ -42,7 +42,7 @@ a {
         font-weight: bold;
         text-align: left;
         font-family: 'Rubik', 'Verdana', 'Arial', 'Times New Roman';
-    }
+    } */
 
     p {
         color: white;
@@ -248,96 +248,48 @@ a {
         display: none;
     }
 
-    .myWork {
+    /* Projecten Homepage*/
+    .h1Text {
         text-align: center;
         margin-top: 40px;
         margin: 0 20px;
     }
 
-    .buttonsMyWork {
+    .myWorkCards {
         display: flex;
         flex-direction: column;
-    }
-
-    .buttonSkillsHomepage {
-        width: 100%;
-        background-image: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
-        font-family: 'Rubik', 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
-        font-size: 18px;
-        font-style: normal;
-        font-weight: bold;
-        padding: 20px 0;
-        border: none;
-        margin: 10px 0;
-        border-radius: 2px;
-        color: black;
-    }
-
-    /* buttons skills */
-    #myBtnContainer {
-        position: sticky;
-        top: 15px;
-        background-color: #090909;
-        z-index: 9998;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
-
-    .myBtnContainerTitle {
-        margin: 0 auto;
-    }
-
-    .myBtnContainerButtons {
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        padding: 0 20px;
-    }
-    
-    button[class=buttonSkills] {
-        width: 100%;
-        font-family: 'Rubik', 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
-        font-style: normal;
-        font-weight: bold;
-        padding: 10px;
-        border: 3px solid;
-        border-image: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
-        border-image-slice: 1;
-        margin: 10px 0;
-        position: relative;
-        font-size: 14px;
-        background-image: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        cursor: pointer;
-    }
-    
-    .buttonSkills.active {
-        width: 100%;
-        padding: 10px;
-        font-family: 'Rubik', 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
-        font-size: 14px;
-        font-style: normal;
-        font-weight: bold;
-        margin: 10px 0;
-        color: black;
-        background-image: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
-        background-clip: border-box;
-        border: 3px solid transparent;
-        border-image: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
-        border-image-slice: 1;
-    }
-        
-    .filterDiv {
-        display: none;
+        justify-content: space-between;
         margin: 0 20px;
     }
-        
-    .show { 
-        display: block;
+
+    .projectkaart {
+        width: 100%; 
+        display: inline-block; 
+        text-align: center; 
+        text-decoration: none; 
+        border: 3px solid;
+        border-image: linear-gradient(to bottom right, #F5BF00, #fd8f28, #f8410f);
+        border-image-slice: 1;
+        background-image: linear-gradient(to bottom right, #F5BF00, #fd8f28, #f8410f);
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        margin-bottom: 20px;
     }
+
+    .projectkaart img {
+        max-width: 100%;
+    }
+
+    .projectkaart .tekst {
+        padding: 15px;
+        font-family: 'Rubik', 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
+        font-style: normal;
+        font-weight: bold;
+        position: relative;
+        font-size: 20px;
+        color: #090909;
+    }  
+
 
     /* Footer */
     footer {
@@ -375,9 +327,28 @@ a {
         font-size: 37px; 
         font-style: normal;
         font-weight: normal;
+        display: flex;
+        flex-direction: row;
+        margin: 0 100px;
     }
 
-    h2 {
+    h1:before,
+    h1:after {
+        content: "";
+        flex: 1 1;
+        border-bottom: 2px solid #ffc400;
+        margin: auto 0px;
+    }
+
+    h1::before{
+        margin-right: 10px;
+    }
+
+    h1::after{
+        margin-left: 10px;
+    }
+
+    /* h2 {
         background: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
         -webkit-background-clip: text;
         background-clip: text;
@@ -387,7 +358,7 @@ a {
         font-weight: bold;
         text-align: left;
         font-family: 'Rubik', 'Verdana', 'Arial', 'Times New Roman';
-    }
+    } */
 
 
     p {
@@ -533,7 +504,8 @@ a {
         text-align: center;
     }
 
-    .myWork {
+    /* Projecten Homepage*/
+    .h1Text {
         text-align: center;
         margin: 60px 0;
     }
