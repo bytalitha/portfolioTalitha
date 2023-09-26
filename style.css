@@ -52,6 +52,15 @@ a {
         line-height: 1.5;
     }
 
+    p.heading {
+        color: white;
+        font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
+        font-size: 14px; 
+        font-style: normal;
+        font-weight: bold;
+        margin-bottom: -10px;
+    }
+
 /*Navbar*/
     .logoTalitha {
         width: 160px;
@@ -227,6 +236,10 @@ a {
         margin: 20px 20px 40px 20px;
     }
 
+    .paragraph {
+        margin-bottom: 30px;
+    }
+
     .socialMediaHomeContainer {
         margin-top: 10px;
         display: flex;
@@ -281,12 +294,12 @@ a {
     }
 
     .projectkaart .tekst {
-        padding: 15px;
+        padding: 10px;
         font-family: 'Rubik', 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
         font-style: normal;
         font-weight: bold;
         position: relative;
-        font-size: 20px;
+        font-size: 18px;
         color: #090909;
     }  
 
@@ -498,11 +511,11 @@ a {
         transform: scale(1.2);
     }
 
-    .tekstHome {
+    /* .tekstHome {
         width: 300px;
         margin: 50px auto;
         text-align: center;
-    }
+    } */
 
     /* Projecten Homepage*/
     .h1Text {
