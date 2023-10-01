@@ -1,16 +1,18 @@
-// Hamburger verandert in kruisje
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".navmenu");
-const menuCheckbox = document.getElementById("menubar");
+if (window.innerWidth <= 768) {
+   // Hamburger verandert in kruisje
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".navmenu");
+    const menuCheckbox = document.getElementById("menubar");
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-});
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
 
-menuCheckbox.addEventListener("change", () => {
-  hamburger.classList.toggle("active", menuCheckbox.checked);
-});
+    menuCheckbox.addEventListener("change", () => {
+      hamburger.classList.toggle("active", menuCheckbox.checked);
+    });
+
 
 // Openen en sluiten submenu + Draaien pijltje in submenu
 const submenuItems = document.querySelectorAll('.navmenu ul li.has-sub');
@@ -38,3 +40,4 @@ submenuItems.forEach(item => {
     });
   });
 });
+   }
