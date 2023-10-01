@@ -53,7 +53,7 @@ a {
     }
 
     p.heading {
-        color: white;
+        color: #F5BF00;
         font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
         font-size: 14px; 
         font-style: normal;
@@ -261,6 +261,14 @@ a {
         display: none;
     }
 
+    .mySkills {
+        margin: 0 20px;
+    }
+
+    .imageSkills {
+        width: 100%;
+    }
+
     /* Projecten Homepage*/
     .h1Text {
         text-align: center;
@@ -349,7 +357,7 @@ a {
     h1:after {
         content: "";
         flex: 1 1;
-        border-bottom: 2px solid #ffc400;
+        border-bottom: 2px solid #F5BF00;
         margin: auto 0px;
     }
 
@@ -380,6 +388,15 @@ a {
         font-size: 18px; 
         font-style: normal;
         line-height: 1.5;
+    }
+
+    p.heading {
+        color: #F5BF00;
+        font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
+        font-size: 18px; 
+        font-style: normal;
+        font-weight: bold;
+        margin-bottom: -10px;
     }
 
     /* Navbar */
@@ -475,16 +492,42 @@ a {
     }
 
     /* Home */
+    .about{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
     .tekstgedeelte {
-        margin: 0 100px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        margin-right: 50px;
+        width: 50%;
+    }
+
+    .paragraph {
+        margin-bottom: 30px;
+    }
+
+    .mySkills {
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 50%;
+        margin-top: 190px;
+    }
+
+    .imageSkills {
+        float: right;
+        width: 100%;
     }
 
     .socialMediaHomeContainer {
         margin-top: 10px;
+        margin-bottom: 15px;
         display: flex;
         flex-direction: row;
         gap: 20px;
-        justify-content: center;
     }
 
     .socialMediaHome {
@@ -510,12 +553,6 @@ a {
         opacity: 1;
         transform: scale(1.2);
     }
-
-    /* .tekstHome {
-        width: 300px;
-        margin: 50px auto;
-        text-align: center;
-    } */
 
     /* Projecten Homepage*/
     .h1Text {
