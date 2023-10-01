@@ -270,6 +270,10 @@ a {
     }
 
     /* Projecten Homepage*/
+    #about { 
+        scroll-margin-top: 150px;
+    }
+
     .h1Text {
         text-align: center;
         margin-top: 40px;
