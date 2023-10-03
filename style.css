@@ -32,18 +32,6 @@ a {
         font-weight: normal;
     }
 
-    /* h2 {
-        background: linear-gradient(to right, #F5BF00, #fd8f28, #f8410f);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        max-width: max-content;
-        font-size: 23px;
-        font-weight: bold;
-        text-align: left;
-        font-family: 'Rubik', 'Verdana', 'Arial', 'Times New Roman';
-    } */
-
     p {
         color: white;
         font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
@@ -614,7 +602,28 @@ a {
     .projectkaart:hover .tekst {
         color: #090909;
         transition: 0.5s;
-    }    
+    } 
+    
+    /* LiveWall project */
+    #liveWallProject {
+        margin: 0 100px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+    }
+
+    .widthFifty {
+        width: 50%;
+    }
+
+    .livewallpicture {
+        width: 100%;
+    }
+
+    .whitespace {
+        margin: 120px 0;
+    }
 
     /* Footer */
     footer {
