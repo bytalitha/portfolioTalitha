@@ -197,10 +197,6 @@ a {
        transform: translateX(0);
     }
 
-    .navbar ul.menu li a.active {
-        color: #F5BF00;
-    }
-
     header .navmenu ul.menu > li > a {
         font-weight: bold;
     }
@@ -485,13 +481,11 @@ a {
         width: 205px;
     }
 
-    .navbar li a:hover,
-    .navbar li a.active {
+    .navbar li a:hover{
         color: #F5BF00;
     }
 
-    .navmenu li a:hover .arrow,
-    .navmenu li a.active .arrow  {
+    .navmenu li a:hover .arrow {
         border-color: #F5BF00;
     }
 
