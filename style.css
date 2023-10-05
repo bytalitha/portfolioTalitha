@@ -21,8 +21,8 @@ a {
     color: white;
 }
 
-/* Mobiel */
-@media screen and (max-width: 480px) {
+/* Mobiel */ 
+@media screen and (min-width:0) and (max-width: 767px) {
     /* Tekst */
     h1 {
         color: #F5BF00;
@@ -326,7 +326,7 @@ a {
 }
 
 /* Tablet staand */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:1023px) {
     /* Tekst */
     h1 {
         color: #F5BF00;
@@ -367,7 +367,6 @@ a {
     }
 
     .nav-item {
-        /* border-bottom: 1px solid #F5BF00;  */
         background-color: #090909;
     }
     
@@ -629,8 +628,318 @@ a {
     }
 }
 
+/* Tablet liggend */
+@media screen and (min-width: 1024px) and (max-width: 1279px){ 
+    /* Tekst */
+    h1 {
+        color: #F5BF00;
+        font-family: 'Rubik', 'Verdana', 'Arial', 'Times New Roman';
+        font-size: 43px; 
+        font-style: normal;
+        font-weight: normal;
+        display: flex;
+        flex-direction: row;
+        margin: 0 50px;
+    }
+
+    h1:before,
+    h1:after {
+        content: "";
+        flex: 1 1;
+        border-bottom: 2px solid #F5BF00;
+        margin: auto 0px;
+    }
+
+    h1::before{
+        margin-right: 10px;
+    }
+
+    h1::after{
+        margin-left: 10px;
+    }
+
+    p {
+        color: white;
+        font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
+        font-size: 16px; 
+        font-style: normal;
+        line-height: 1.5;
+    }
+
+    p.heading {
+        color: #F5BF00;
+        font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
+        font-size: 16px; 
+        font-style: normal;
+        font-weight: bold;
+        margin-bottom: -10px;
+    }
+
+    /* Navbar */
+    .hamburger {
+      display: none;
+    }
+
+    .logoTalitha {
+        width: 200px;
+    }
+    
+    header {
+        position: sticky;
+        top: 0;
+        border-bottom: 2px solid #F5BF00;
+        z-index: 99999;
+        background-color: #090909;
+    }
+
+    .navmenu {
+        display: block;
+        margin-left: auto;
+    }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        margin: 0 50px;
+    }
+    
+    header .navmenu ul li {
+        list-style: none;
+        margin: 0;
+        display: inline-block;
+    }
+    
+    header .navmenu ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        font-size: 18px;
+        font-style: normal;
+        font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .arrow {
+        width: 10px;
+        height: 10px;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+        transform: rotate(-45deg);
+        vertical-align: middle;
+        float: right;
+        margin-left: 10px;
+    }
+
+    .navmenu ul li {
+        list-style: none;
+        margin: 0;
+        position: relative;
+    }
+    
+    .navmenu ul li .submenu {
+        display: none;
+        position: absolute;
+        z-index: 9999;
+        left: -20px;
+    }
+    
+    .navmenu ul li:hover .submenu {
+        display: block;
+    }
+    
+    .navmenu ul li .submenu a {
+        text-decoration: none;
+        display: block;
+        background-color: #171717;
+        border-left: 3px solid #F5BF00;
+        border-right: 3px solid #F5BF00;
+        width: 205px;
+    }
+
+    .navbar li a:hover{
+        color: #F5BF00;
+    }
+
+    .navmenu li a:hover .arrow {
+        border-color: #F5BF00;
+    }
+
+    /* Home */
+    #about {
+        scroll-margin-top: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tekstgedeelte {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 10px;
+        width: 50%;
+    }
+
+    .paragraph {
+        margin-bottom: 30px;
+    }
+
+    .mySkills {
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 50%;
+        margin-top: 190px;
+    }
+
+    .imageSkills {
+        float: right;
+        width: 100%;
+    }
+
+    .socialMediaHomeContainer {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .socialMediaHome {
+        height: 30px;
+        transition: background-color 0.3s;
+    }
+
+    .imageContainer {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .hoverableImage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .imageContainer:hover .hoverableImage {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    /* Projecten Homepage*/
+    #myProjects {
+        scroll-margin-top: 100px;
+    }
+
+    .h1Text {
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    .myWorkCards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 50px 20px 50px;
+    }
+
+    .projectkaart {
+        width: 290px; 
+        display: inline-block; 
+        text-align: center; 
+        text-decoration: none; 
+        border: 2px solid;
+        border-image: linear-gradient(to bottom right, #F5BF00, #fd8f28, #f8410f);
+        border-image-slice: 1;
+        background-color: #f5c0001f;
+    }
+
+    .projectkaart img {
+        max-width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    .projectkaart img:hover {
+        transform: scale(0.97);
+    }
+
+    .projectkaart .tekst {
+        padding: 10px;
+        font-family: 'Rubik', 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
+        font-style: normal;
+        font-weight: bold;
+        position: relative;
+        font-size: 20px;
+        background-image: linear-gradient(to bottom right, #F5BF00, #fd8f28, #f8410f);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        cursor: pointer;
+    }
+    
+    .projectkaart:hover {
+        background-image: linear-gradient(to bottom right, #F5BF00, #fd8f28, #f8410f);
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        transition: 0.5s;
+    }
+    
+    .projectkaart:hover .tekst {
+        color: #090909;
+        transition: 0.5s;
+    } 
+    
+    /* LiveWall project */
+    #liveWallProject {
+        margin: 0 50px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+    }
+
+    .widthFifty {
+        width: 50%;
+    }
+
+    .livewallpicture {
+        width: 100%;
+    }
+
+    .whitespace {
+        margin: 120px 0;
+    }
+
+    /* Footer */
+    footer {
+        background-color:#090909;
+        margin-top: 20px;
+        color: white;
+        font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
+    }
+            
+    footer p {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+            
+    .footer {
+        bottom: 0;
+        margin: 0px 50px;
+        margin-top: 80px;
+    }
+              
+    .footer a {
+        color: white;
+    }
+}  
+
 /* Desktop */
-@media screen and (min-width: 1024px) { 
+@media screen and (min-width: 1280px) { 
     /* Tekst */
     h1 {
         color: #F5BF00;
@@ -764,6 +1073,10 @@ a {
 
     .navmenu li a:hover .arrow {
         border-color: #F5BF00;
+    }
+
+    #menubar:checked ~ header .navmenu {
+        display: block;
     }
 
     /* Home */
