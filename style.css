@@ -517,23 +517,47 @@ a {
     }
 
     /* Home */
+    #about {
+        scroll-margin-top: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
     .tekstgedeelte {
-        margin: 50px 50px 80px 50px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 10px;
+        width: 50%;
     }
 
     .paragraph {
         margin-bottom: 30px;
     }
 
+    .mySkills {
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 50%;
+        margin-top: 190px;
+    }
+
+    .imageSkills {
+        float: right;
+        width: 100%;
+    }
+
     .socialMediaHomeContainer {
         margin-top: 10px;
+        margin-bottom: 15px;
         display: flex;
         flex-direction: row;
-        gap: 15px;
+        gap: 20px;
     }
 
     .socialMediaHome {
-        height: 25px;
+        height: 30px;
         transition: background-color 0.3s;
     }
 
@@ -541,65 +565,105 @@ a {
         position: relative;
         display: inline-block;
     }
-
+    
     .hoverableImage {
-        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        cursor: pointer;
     }
-
-    .mySkills {
-        margin: 0 50px;
-        margin-bottom: 80px;
-    }
-
-    .imageSkills {
-        width: 100%;
+    
+    .imageContainer:hover .hoverableImage {
+        opacity: 1;
+        transform: scale(1.2);
     }
 
     /* Projecten Homepage*/
-    #about { 
-        scroll-margin-top: 150px;
+    #myProjects {
+        scroll-margin-top: 100px;
     }
 
     .h1Text {
         text-align: center;
-        margin-top: 40px;
-        margin: 0 50px;
+        margin: 50px 0;
     }
 
     .myWorkCards {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         margin: 0 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .projectkaart {
-        width: 100%; 
+        width: 340px; 
         display: inline-block; 
         text-align: center; 
         text-decoration: none; 
-        border: 3px solid;
+        border: 2px solid;
         border-image: linear-gradient(to bottom right, #F5BF00, #fd8f28, #f8410f);
         border-image-slice: 1;
-        background-image: linear-gradient(to bottom right, #F5BF00, #fd8f28, #f8410f);
-        -webkit-background-clip: border-box;
-        background-clip: border-box;
-        margin-bottom: 50px;
+        background-color: #f5c0001f;
+        margin: 20px 0;
     }
 
     .projectkaart img {
         max-width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    .projectkaart img:hover {
+        transform: scale(0.97);
     }
 
     .projectkaart .tekst {
-        padding: 20px;
+        padding: 10px;
         font-family: 'Rubik', 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
         font-style: normal;
         font-weight: bold;
         position: relative;
-        font-size: 22px;
+        font-size: 20px;
+        background-image: linear-gradient(to bottom right, #F5BF00, #fd8f28, #f8410f);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        cursor: pointer;
+    }
+    
+    .projectkaart:hover {
+        background-image: linear-gradient(to bottom right, #F5BF00, #fd8f28, #f8410f);
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        transition: 0.5s;
+    }
+    
+    .projectkaart:hover .tekst {
         color: #090909;
-    }  
+        transition: 0.5s;
+    } 
+    
+    /* LiveWall project */
+    #liveWallProject {
+        margin: 0 50px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+    }
+
+    .widthFifty {
+        width: 50%;
+    }
+
+    .livewallpicture {
+        width: 100%;
+    }
+
+    .whitespace {
+        margin: 120px 0;
+    }
 
     /* Footer */
     footer {
@@ -841,14 +905,14 @@ a {
     }
 
     .myWorkCards {
+        margin: 0 50px;
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
-        margin: 0 50px 20px 50px;
     }
 
     .projectkaart {
-        width: 290px; 
+        width: 340px; 
         display: inline-block; 
         text-align: center; 
         text-decoration: none; 
@@ -856,6 +920,7 @@ a {
         border-image: linear-gradient(to bottom right, #F5BF00, #fd8f28, #f8410f);
         border-image-slice: 1;
         background-color: #f5c0001f;
+        margin: 20px 0;
     }
 
     .projectkaart img {
@@ -1154,10 +1219,10 @@ a {
     }
 
     .myWorkCards {
+        margin: 0 100px;
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
-        margin: 0 100px 30px 100px;
     }
 
     .projectkaart {
@@ -1169,6 +1234,7 @@ a {
         border-image: linear-gradient(to bottom right, #F5BF00, #fd8f28, #f8410f);
         border-image-slice: 1;
         background-color: #f5c0001f;
+        margin: 20px 0;
     }
 
     .projectkaart img {
