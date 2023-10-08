@@ -25,6 +25,22 @@ span {
     color: #F5BF00;
 }
 
+h1:before,
+h1:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #F5BF00;
+    margin: auto 0px;
+}
+
+h1::before{
+    margin-right: 10px;
+}
+
+h1::after{
+    margin-left: 10px;
+}
+
 /* Mobiel */ 
 @media screen and (max-width: 480px) {
     /* Tekst */
@@ -747,22 +763,6 @@ span {
         margin: 0 50px;
     }
 
-    h1:before,
-    h1:after {
-        content: "";
-        flex: 1 1;
-        border-bottom: 2px solid #F5BF00;
-        margin: auto 0px;
-    }
-
-    h1::before{
-        margin-right: 10px;
-    }
-
-    h1::after{
-        margin-left: 10px;
-    }
-
     p {
         color: white;
         font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
@@ -1108,22 +1108,6 @@ span {
         display: flex;
         flex-direction: row;
         margin: 0 100px;
-    }
-
-    h1:before,
-    h1:after {
-        content: "";
-        flex: 1 1;
-        border-bottom: 2px solid #F5BF00;
-        margin: auto 0px;
-    }
-
-    h1::before{
-        margin-right: 10px;
-    }
-
-    h1::after{
-        margin-left: 10px;
     }
 
     p {
