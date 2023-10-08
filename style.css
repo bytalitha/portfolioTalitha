@@ -21,6 +21,10 @@ a {
     color: white;
 }
 
+span {
+    color: #F5BF00;
+}
+
 /* Mobiel */ 
 @media screen and (max-width: 480px) {
     /* Tekst */
@@ -294,6 +298,33 @@ a {
         color: #090909;
         text-align: center; 
     }  
+
+    /* Media project */
+    .mediaProject {
+        margin: 0 20px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+    
+    .projectPicture {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #introVideoSabrina {
+        width: 100%;
+    }
+
+    .whitespace {
+        margin: 50px 0;
+    }
+
+    .custom-link {
+        color: #F5BF00;
+        text-decoration: underline;
+    }
 
     /* Footer */
     footer {
@@ -647,8 +678,8 @@ a {
         }
     }
     
-    /* LiveWall project */
-    #liveWallProject {
+    /* Media project */
+    .mediaProject {
         margin: 0 50px;
         width: auto;
         display: flex;
@@ -660,12 +691,24 @@ a {
         width: 50%;
     }
 
-    .livewallpicture {
+    .projectPicture {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #introVideoSabrina {
+        /* width: 560px; 
+        height: 315px; */
         width: 100%;
     }
 
     .whitespace {
-        margin: 120px 0;
+        margin: 420px 0;
+    }
+
+    .custom-link {
+        color: #F5BF00;
+        text-decoration: underline;
     }
 
     /* Footer */
@@ -966,8 +1009,8 @@ a {
         }
     }
     
-    /* LiveWall project */
-    #liveWallProject {
+    /* Media project */
+    .mediaProject {
         margin: 0 50px;
         width: auto;
         display: flex;
@@ -979,13 +1022,25 @@ a {
         width: 50%;
     }
 
-    .livewallpicture {
+    .projectPicture {
         width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #introVideoSabrina {
+        width: 460px; 
+        height: 250px;
     }
 
     .whitespace {
-        margin: 120px 0;
+        margin: 480px 0;
     }
+
+    .custom-link {
+        color: #F5BF00;
+        text-decoration: underline;
+    }
+
 
     /* Footer */
     footer {
@@ -1279,9 +1334,15 @@ a {
         color: #090909;
         transition: 0.5s;
     } 
+
+    @media (min-width: 1776px) {
+        .projectkaart {
+            width: 450px; 
+        }
+    }
     
-    /* LiveWall project */
-    #liveWallProject {
+    /* Media project */
+    .mediaProject {
         margin: 0 100px;
         width: auto;
         display: flex;
@@ -1293,12 +1354,23 @@ a {
         width: 50%;
     }
 
-    .livewallpicture {
+    .projectPicture {
         width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #introVideoSabrina {
+        width: 560px; 
+        height: 315px;
     }
 
     .whitespace {
         margin: 120px 0;
+    }
+
+    .custom-link:hover {
+        color: #F5BF00;
+        text-decoration: underline;
     }
 
     /* Footer */
