@@ -1063,6 +1063,13 @@ span {
             color: #F5BF00;
             text-decoration: underline;
         } 
+
+        .textProject {
+            width: 50%;
+            position: sticky;
+            top: 220px;
+            align-self: flex-start;
+        }
     }
 
     /* Footer */
@@ -1375,6 +1382,13 @@ span {
 
     .widthFifty {
         width: 50%;
+    }
+
+    .textProject {
+        width: 50%;
+        position: sticky;
+        top: 220px;
+        align-self: flex-start;
     }
 
     .projectPicture {
