@@ -4,6 +4,8 @@ body, html {
     box-sizing: border-box;
     background-color: #090909;
     scroll-behavior: smooth;
+    min-height: 100vh;
+    position: relative;
 }
 
 .backgroundImage {
@@ -347,12 +349,18 @@ h2::after{
     }  
 
     /* Media project */
+    #myProjects {
+        scroll-margin-top: 100px;
+        padding-bottom: 80px;
+    }
+
     .mediaProject {
         margin: 0 20px;
         width: auto;
         display: flex;
         flex-direction: column;
         gap: 10%;
+        padding-bottom: 30px;
     }
     
     .projectPicture {
@@ -364,39 +372,31 @@ h2::after{
         width: 100%;
     }
 
-    .whitespace {
-        margin: 50px 0;
-    }
-
     .custom-link {
         color: #F5BF00;
         text-decoration: underline;
     }
 
     /* Footer */
-    footer {
+    footer p {
+        font-size: 12px;
         background-color:#090909;
-        margin: 15px 0;
         color: white;
         font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
     }
-        
-    footer p {
-        margin: 0;
-        padding: 5px 0;
-        font-size: 12px;
-    }
-        
+            
     .footer {
-        display: flex;
-        flex-direction: column-reverse;
         bottom: 0;
-        padding: 5px;
-        margin: 0 20px;
+        margin-left: 20px;
+        position: absolute; 
     }
-          
+              
     .footer a {
         color: white;
+    }
+    
+    .content-wrap {
+        padding-bottom: 40px;
     }
 }
 
@@ -663,6 +663,7 @@ h2::after{
     /* Projecten Homepage*/
     #myProjects {
         scroll-margin-top: 100px;
+        padding-bottom: 80px;
     }
 
     .h2Text {
@@ -749,39 +750,31 @@ h2::after{
         width: 100%;
     }
 
-    .whitespace {
-        margin: 400px 0;
-    }
-
     .custom-link {
         color: #F5BF00;
         text-decoration: underline;
     }
 
     /* Footer */
-    footer {
+    footer p {
+        font-size: 14px;
         background-color:#090909;
-        margin: 15px 0;
         color: white;
         font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
     }
-        
-    footer p {
-        margin: 0;
-        padding: 5px 0;
-        font-size: 14px;
-    }
-        
+            
     .footer {
-        display: flex;
-        flex-direction: column-reverse;
         bottom: 0;
-        padding: 5px;
-        margin: 0 30px;
+        margin-left: 30px;
+        position: absolute; 
     }
-          
+              
     .footer a {
         color: white;
+    }
+    
+    .content-wrap {
+        padding-bottom: 80px;
     }
 }
 
@@ -979,6 +972,7 @@ h2::after{
     /* Projecten Homepage*/
     #myProjects {
         scroll-margin-top: 100px;
+        padding-bottom: 80px;
     }
 
     .h2Text {
@@ -1064,10 +1058,6 @@ h2::after{
         width: 100%;
     }
 
-    .whitespace {
-        margin: 400px 0;
-    }
-
     .custom-link {
         color: #F5BF00;
         text-decoration: underline;
@@ -1096,10 +1086,6 @@ h2::after{
             height: 250px;
         }
 
-        .whitespace {
-            margin: 480px 0;
-        }
-
         .custom-link {
             color: #F5BF00;
             text-decoration: underline;
@@ -1114,26 +1100,25 @@ h2::after{
     }
 
     /* Footer */
-    footer {
+    footer p {
+        font-size: 14px;
         background-color:#090909;
-        margin-top: 20px;
         color: white;
         font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
     }
             
-    footer p {
-        margin-bottom: 20px;
-        font-size: 14px;
-    }
-            
     .footer {
         bottom: 0;
-        margin: 0px 50px;
-        margin-top: 80px;
+        margin-left: 50px;
+        position: absolute; 
     }
               
     .footer a {
         color: white;
+    }
+    
+    .content-wrap {
+        padding-bottom: 80px;
     }
 }  
 
@@ -1334,6 +1319,7 @@ h2::after{
     /* Projecten Homepage*/
     #myProjects {
         scroll-margin-top: 100px;
+        padding-bottom: 80px;
     }
 
     .h2Text {
@@ -1417,7 +1403,7 @@ h2::after{
     .textProject {
         width: 50%;
         position: sticky;
-        top: 220px;
+        top: 230px;
         align-self: flex-start;
     }
 
@@ -1431,36 +1417,31 @@ h2::after{
         height: 315px;
     }
 
-    .whitespace {
-        margin: 120px 0;
-    }
-
     .custom-link:hover {
         color: #F5BF00;
         text-decoration: underline;
     }
 
-    /* Footer */
-    footer {
+    /* Footer */            
+    footer p {
+        font-size: 14px;
         background-color:#090909;
-        margin-top: 20px;
         color: white;
         font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
     }
             
-    footer p {
-        margin-top: 80px;
-        margin-bottom: 20px;
-        font-size: 14px;
-    }
-            
     .footer {
         bottom: 0;
-        margin: 0px 100px;
+        margin-left: 100px;
+        position: absolute; 
     }
               
     .footer a {
         color: white;
+    }
+    
+    .content-wrap {
+        padding-bottom: 80px;
     }
 }  
 
