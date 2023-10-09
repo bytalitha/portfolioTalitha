@@ -14,6 +14,21 @@ body, html {
     border-bottom: 2px solid #F5BF00;
 }
 
+.bottomRightButton {
+    font-family: 'Rubik', 'Verdana', 'Arial', 'Times New Roman';
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    border-image: linear-gradient(to bottom right, #F5BF00, #fd8f28, #f8410f);
+    border-image-slice: 1;
+    background-image: linear-gradient(to bottom right, #F5BF00, #fd8f28, #f8410f);
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    color: #090909;
+    text-decoration: none;
+}
+
 #menubar {
     display: none;
 }
@@ -58,22 +73,6 @@ h2::after{
     margin-left: 10px;
 }
 
-.button-container {
-    position: fixed;
-    bottom: 20px; /* Aanpassen aan de gewenste afstand vanaf de onderkant */
-    right: 20px; /* Aanpassen aan de gewenste afstand vanaf de rechterkant */
-}
-
-.bottom-right-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff; /* Pas de kleur aan zoals gewenst */
-    color: #fff; /* Tekstkleur */
-    text-decoration: none;
-    border-radius: 5px; /* Afgeronde hoeken */
-    font-weight: bold;
-}
-
 /* Mobiel */ 
 @media screen and (max-width: 480px) {
     /* Tekst */
@@ -93,6 +92,7 @@ h2::after{
         line-height: 1.5;
     }
 
+    h1,
     p.heading {
         color: #F5BF00;
         font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
@@ -268,6 +268,11 @@ h2::after{
     }
 
     /* Home */
+    .bottomRightButton,
+    .buttonContainer {
+        display: none;
+    }
+    
     .tekstgedeelte {
         margin: 20px 20px 40px 20px;
     }
@@ -419,6 +424,7 @@ h2::after{
         line-height: 1.5;
     }
 
+    h1,
     p.heading {
         color: #F5BF00;
         font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
@@ -592,6 +598,11 @@ h2::after{
     }
 
     /* Home */
+    .bottomRightButton,
+    .buttonContainer {
+        display: none;
+    }
+    
     #about {
         scroll-margin-top: 200px;
         width: 100%;
@@ -800,6 +811,7 @@ h2::after{
         line-height: 1.5;
     }
 
+    h1,
     p.heading {
         color: #F5BF00;
         font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
@@ -901,6 +913,11 @@ h2::after{
     }
 
     /* Home */
+    .bottomRightButton,
+    .buttonContainer {
+        display: none;
+    }
+
     #about {
         scroll-margin-top: 200px;
         width: 100%;
@@ -1144,6 +1161,7 @@ h2::after{
         line-height: 1.5;
     }
 
+    h1,
     p.heading {
         color: #F5BF00;
         font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
@@ -1248,8 +1266,18 @@ h2::after{
     }
 
     /* Home */
+    .buttonContainer {
+        position: fixed;
+        bottom: 20px;
+        right: 20px; 
+    }
+    
+    .bottomRightButton:hover {
+        opacity: 0.8;
+    }
+
     #about {
-        scroll-margin-top: 200px;
+        scroll-margin-top: 50px;
         width: 100%;
         display: flex;
         flex-direction: column;

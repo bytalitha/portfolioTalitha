@@ -50,3 +50,13 @@ if (window.innerWidth <= 768) {
       });
   });
 }
+
+window.addEventListener('scroll', function() {
+    var buttonContainer = document.querySelector('.buttonContainer');
+    
+    if (window.scrollY > 100) { 
+        buttonContainer.style.display = 'none';
+    } else {
+        buttonContainer.style.display = 'block';
+    }
+});
