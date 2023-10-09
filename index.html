@@ -6,21 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    
     <title>Talitha van der Vlies</title>
+    <meta name="author" content="Talitha van der Vlies - Web Developer">
+    <meta name="description" content="I'm a web developer with expertise in front-end development. Visit my website for web development insights and projects.">
+
+    <meta property="og:title" content="Talitha van der Vlies - Web Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.talitha.dev/">
+    <meta property="og:description" content="I'm a web developer with expertise in front-end development. Visit my website for web development insights and projects.">
+    <meta property="og:image" content="https://www.talitha.dev/images/logoTalitha.png">
+    <meta property="og:image:alt" content="Talitha van der Vlies - Web Developer Portfolio">
 
     <link rel="stylesheet" href="style.css">
     <script defer src="main.js"></script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
+    <!-- <link rel="preload" href="/fonts/roboto-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin"> -->
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar">
+        <div class="navbar">
             <div class="logo">
                 <a href="index.html">
-                    <img class="logoTalitha" src="images/logoTalitha.png" alt="logo">
+                    <img class="logoTalitha" src="images/logoTalitha.png" alt="Talitha van der Vlies">
                 </a>
             </div>
 
@@ -40,6 +52,7 @@
                         </ul>
                     </li>
                     <li class="nav-item close"><a href="#about">About</a></li>
+                    <li class="nav-item close"><a href="mailto:info@talitha.dev"><img class="emailIcon" src="images/emailIcon.png" alt="e-mail"><span class="gradientFire">info@talitha.dev</span></a></li>
                 </ul>
             </nav>
 
@@ -50,91 +63,97 @@
                     <span class="bar"></span>
                 </div>
             </label>
-        </nav>
+        </div>
     </header>
 
-    <img class="backgroundImage" src="images/achtergrondWeb.jpg" alt="backgroundImage">
+    <img class="backgroundImage" src="images/achtergrondWeb.jpg" alt="girlOnFire">
 
-    <div class="h1Text">
-        <h1>About</h1>
+    <div class="button-container">
+        <a href="#myProjects" class="bottom-right-button">Bekijk projecten</a>
     </div>
 
     <section id="about">
-        <div class="tekstgedeelte">
-            <div class="paragraph">
-                <p class="heading">Hi, ik ben Talitha van der Vlies!</p>
-                <p>Een student ICT & Media Design (associate degree) aan de Fontys in Eindhoven, op zoek naar een uitdagende afstudeerstage als front-end developer.</p>
-                <div class="socialMediaHomeContainer">
-                    <div class="imageContainer">
-                        <a href="https://www.linkedin.com/in/talitha-v-091847164/" target="_blank">
-                            <img class="socialMediaHome" src="images/linkedin.png" alt="LinkedIn">
-                        </a>
-                        <div class="hoverableImage">
+        <div class="h2Text">
+            <h2>About</h2>
+        </div>
+
+        <div class="allTextAbout">
+            <div class="tekstgedeelte">
+                <div class="paragraph">
+                    <p class="heading">Hi, ik ben Talitha van der Vlies!</p>
+                    <p>Een student ICT & Media Design (associate degree) aan de Fontys in Eindhoven, op zoek naar een uitdagende afstudeerstage als front-end developer.</p>
+                    <div class="socialMediaHomeContainer">
+                        <div class="imageContainer">
                             <a href="https://www.linkedin.com/in/talitha-v-091847164/" target="_blank">
-                                <img class="socialMediaHome" src="images/linkedinGeel.png" alt="LinkedIn">
+                                <img class="socialMediaHome" src="images/linkedin.png" alt="LinkedIn">
                             </a>
+                            <div class="hoverableImage">
+                                <a href="https://www.linkedin.com/in/talitha-v-091847164/" target="_blank">
+                                    <img class="socialMediaHome" src="images/linkedinGeel.png" alt="LinkedIn">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-        
-                    <div class="imageContainer">
-                        <a href="https://github.com/bytalitha?tab=repositories" target="_blank">
-                            <img class="socialMediaHome" src="images/github.png" alt="GitHub">
-                        </a>
-                        <div class="hoverableImage">
+            
+                        <div class="imageContainer">
                             <a href="https://github.com/bytalitha?tab=repositories" target="_blank">
-                                <img class="socialMediaHome" src="images/githubGeel.png" alt="GitHub">
+                                <img class="socialMediaHome" src="images/github.png" alt="GitHub">
                             </a>
+                            <div class="hoverableImage">
+                                <a href="https://github.com/bytalitha?tab=repositories" target="_blank">
+                                    <img class="socialMediaHome" src="images/githubGeel.png" alt="GitHub">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-        
-                    <div class="imageContainer">
-                        <a href="mailto:info@talitha.dev" target="_blank">
-                            <img class="socialMediaHome" src="images/mail.png" alt="Email">
-                        </a>
-                        <div class="hoverableImage">
+            
+                        <div class="imageContainer">
                             <a href="mailto:info@talitha.dev" target="_blank">
-                                <img class="socialMediaHome" src="images/mailGeel.png" alt="Email">
+                                <img class="socialMediaHome" src="images/mail.png" alt="Email">
                             </a>
+                            <div class="hoverableImage">
+                                <a href="mailto:info@talitha.dev" target="_blank">
+                                    <img class="socialMediaHome" src="images/mailGeel.png" alt="Email">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-        
-                    <div class="imageContainer">
-                        <a href="documents/cvTalitha.pdf" target="_blank">
-                            <img class="socialMediaHome" src="images/cvWit.png" alt="CV">
-                        </a>
-                        <div class="hoverableImage">
+            
+                        <div class="imageContainer">
                             <a href="documents/cvTalitha.pdf" target="_blank">
-                                <img class="socialMediaHome" src="images/cvGeel.png" alt="CV">
+                                <img class="socialMediaHome" src="images/cvWit.png" alt="CV">
                             </a>
+                            <div class="hoverableImage">
+                                <a href="documents/cvTalitha.pdf" target="_blank">
+                                    <img class="socialMediaHome" src="images/cvGeel.png" alt="CV">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            
+                <div class="paragraph">
+                    <p class="heading">Mijn toegevoegde waarde</p>
+                    <p>Als student ICT & Media Design vind ik het leuk om mijn creativiteit en technische vaardigheden combineren. Minimalistisch.</p>
+                </div>
+                <div class="paragraph">
+                    <p class="heading">Wat ik wil leren</p>
+                    <p>
+                        Naast mijn huidige project ben ik bezig met het ontwikkelen van mijn vaardigheden in Vue.js. Mijn doel is om mijn kennis omtrent dit framework uit te breiden, uiteindelijk wil ik ook React leren. Na afronding van mijn huidige studie wil ik mijn professionele ontwikkeling voortzetten, dit wil ik doen door het volgen van deeltijdopleidingen of relevante cursussen. Mijn uiteindelijke doel is om mijzelf te ontwikkelen tot een full-stack developer.
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <p class="heading">In mijn vrije tijd</p>
+                    <p>Naast mijn studie hou ik ervan om in beweging te blijven. Skateboarden is iets wat ik al van jongs af aan doe en is een manier om te ontspannen. Daarnaast ben ik ook begonnen met yoga, een discipline die me helpt om zowel mentaal als fysiek gezond te blijven. Ook heb ik drie lieve vogels waar ik veel aandacht aan besteed.</p>
+                </div>
             </div>
-        
-            <div class="paragraph">
-                <p class="heading">Mijn toegevoegde waarde</p>
-                <p>Als student ICT & Media Design vind ik het leuk om mijn creativiteit en technische vaardigheden combineren. Minimalistisch.</p>
-            </div>
-            <div class="paragraph">
-                <p class="heading">Wat ik wil leren</p>
-                <p>
-                    Naast mijn huidige project ben ik bezig met het ontwikkelen van mijn vaardigheden in Vue.js. Mijn doel is om mijn kennis omtrent dit framework uit te breiden, uiteindelijk wil ik ook React leren. Na afronding van mijn huidige studie wil ik mijn professionele ontwikkeling voortzetten, dit wil ik doen door het volgen van deeltijdopleidingen of relevante cursussen. Mijn uiteindelijke doel is om mijzelf te ontwikkelen tot een full-stack developer.
-                </p>
-            </div>
-            <div class="paragraph">
-                <p class="heading">In mijn vrije tijd</p>
-                <p>Naast mijn studie hou ik ervan om in beweging te blijven. Skateboarden is iets wat ik al van jongs af aan doe en is een manier om te ontspannen. Daarnaast ben ik ook begonnen met yoga, een discipline die me helpt om zowel mentaal als fysiek gezond te blijven. Ook heb ik drie lieve vogels waar ik veel aandacht aan besteed.</p>
-            </div>
-        </div>
 
-        <div class="mySkills">
-            <img class="imageSkills" src="images/skillsPortfolio.jpg" alt="skills">
+            <div class="mySkills">
+                <img class="imageSkills" src="images/skillsPortfolio.jpg" alt="skills">
+            </div>
         </div>
     </section>
     
     <section id="myProjects">
-        <div class="h1Text">
-            <h1>Mijn projecten</h1>
+        <div class="h2Text">
+            <h2>Mijn projecten</h2>
         </div>
 
         <div class="myWorkCards">
