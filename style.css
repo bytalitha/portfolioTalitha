@@ -19,21 +19,6 @@ body, html {
     border-bottom: 2px solid #F5BF00;
 }
 
-.bottomRightButton {
-    font-family: 'Rubik', 'Verdana', 'Arial', 'Times New Roman';
-    font-weight: bold;
-    display: inline-block;
-    text-align: center;
-    padding: 10px 20px;
-    border-image: linear-gradient(to bottom right, #F5BF00, #fd8f28, #f8410f);
-    border-image-slice: 1;
-    background-image: linear-gradient(to bottom right, #F5BF00, #fd8f28, #f8410f);
-    -webkit-background-clip: border-box;
-    background-clip: border-box;
-    color: #090909;
-    text-decoration: none;
-}
-
 #menubar {
     display: none;
 }
@@ -273,11 +258,6 @@ h2::after{
     }
 
     /* Home */
-    .bottomRightButton,
-    .buttonContainer {
-        display: none;
-    }
-    
     .tekstgedeelte {
         margin: 20px 20px 40px 20px;
     }
@@ -603,11 +583,6 @@ h2::after{
     }
 
     /* Home */
-    .bottomRightButton,
-    .buttonContainer {
-        display: none;
-    }
-    
     #about {
         scroll-margin-top: 200px;
         width: 100%;
@@ -918,11 +893,6 @@ h2::after{
     }
 
     /* Home */
-    .bottomRightButton,
-    .buttonContainer {
-        display: none;
-    }
-
     #about {
         scroll-margin-top: 200px;
         width: 100%;
@@ -1216,7 +1186,7 @@ h2::after{
         font-size: 18px;
         font-style: normal;
         font-family: 'Roboto', 'Verdana', 'Arial', 'Times New Roman';
-        padding-left: 20px;
+        padding-left: 30px;
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -1271,16 +1241,6 @@ h2::after{
     }
 
     /* Home */
-    .buttonContainer {
-        position: fixed;
-        bottom: 20px;
-        right: 20px; 
-    }
-    
-    .bottomRightButton:hover {
-        opacity: 0.8;
-    }
-
     #about {
         scroll-margin-top: 50px;
         width: 100%;
