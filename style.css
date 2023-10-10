@@ -608,10 +608,8 @@ h2::after{
     }
 
     .mySkills {
-        margin-left: 30px;
-        margin-right: 30px;
         width: 50%;
-        margin-top: 250px;
+        margin: auto 30px;
     }
 
     .imageSkills {
@@ -918,10 +916,8 @@ h2::after{
     }
 
     .mySkills {
-        margin-left: 50px;
-        margin-right: 50px;
         width: 50%;
-        margin-top: 190px;
+        margin: auto 50px;
     }
 
     .imageSkills {
@@ -1266,10 +1262,8 @@ h2::after{
     }
 
     .mySkills {
-        margin-left: 100px;
-        margin-right: 100px;
         width: 50%;
-        margin-top: 190px;
+        margin: auto 100px;
     }
 
     .imageSkills {
