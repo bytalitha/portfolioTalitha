@@ -13,6 +13,7 @@ This repository serves as a comprehensive overview of my qualifications, experie
 - [Folder Structure](#folder-structure)
 - [Contributing](#contributing)
 - [License](#license)
+- [Recommendations](#recommendations)
 
 ## Overview
 
@@ -63,6 +64,7 @@ Provide instructions on how to get your project up and running.
 
 ## Folder Structure
 
+```bash
 project-root/
 │
 ├── documents/
@@ -83,6 +85,7 @@ project-root/
 │   ├── rockacademie.html
 │
 ├── README.md
+```
 
 ## Contributing
 
@@ -102,3 +105,11 @@ Before making significant changes, please discuss them via issue or email to ens
 ## License
 
 This project is licensed under CC BY-NC 4.0. This license determines the terms under which you may use, copy, modify, and distribute the software. It's important to note that this license makes the work available for inspiration but does not permit direct reproduction, modification, or commercial use.
+
+## Recommendations
+
+- Develop the internship portfolio using a framework.
+- Incorporate animation effects into the internship portfolio.
+- Include a function for translation to English.
+- Add a phone number in a way that is not retrievable from the source code.
+- Integrate a contact form.
